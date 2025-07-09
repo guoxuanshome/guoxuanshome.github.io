@@ -244,7 +244,76 @@ p {
   <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
 
 </style>
-
+<style>
+    .experience-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .experience-item {
+        display: flex;
+        border-bottom: 1px solid #eaeaea;
+        padding-bottom: 20px;
+        transition: all 0.3s ease;
+    }
+    
+    .experience-period {
+        width: 200px;
+        font-weight: 500;
+        color: #555;
+        padding-right: 15px;
+        font-size: 15px;
+    }
+    
+    .experience-details {
+        flex: 1;
+    }
+    
+    .experience-details h3 {
+        margin-top: 0;
+        margin-bottom: 8px;
+        font-size: 18px;
+        color: #333;
+        font-weight: 600;
+    }
+    
+    .experience-position {
+        font-weight: 500;
+        color: #3d4f5d;
+        margin-bottom: 8px;
+        font-size: 16px;
+    }
+    
+    .experience-item p {
+        color: #666;
+        line-height: 1.6;
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+    
+    /* 悬停效果 */
+    .experience-item:hover {
+        border-bottom-color: #ccc;
+    }
+    
+    .experience-item:hover .experience-position {
+        color: #2a3c4c;
+    }
+    
+    /* 响应式设计 */
+    @media (max-width: 768px) {
+        .experience-item {
+            flex-direction: column;
+        }
+        
+        .experience-period {
+            width: 100%;
+            padding-right: 0;
+            margin-bottom: 10px;
+        }
+    }
+</style>
 
   <link rel="stylesheet" href="pure-min.css">
   <link rel="stylesheet" href="grids-responsive-min.css">
@@ -294,6 +363,54 @@ p {
 			</div> 
 	
 
+	<div id="experience" style="margin-top: 40px;">
+    <h2 style="font-family: 'Oswald', sans-serif; font-size: 32px; border-bottom: 1px solid #e0e0e0; padding-bottom: 10px; margin-bottom: 20px; color: #333;">
+        学习/工作经历
+    </h2>
+    
+    <div class="experience-container">
+        <!-- 经历条目 1 -->
+        <div class="experience-item">
+            <div class="experience-period">2020年9月 - 至今</div>
+            <div class="experience-details">
+                <h3>天津大学</h3>
+                <p class="experience-position">博士后/助理研究员</p>
+                <p>从事网络表示学习、图神经网络等方向的研究工作，发表多篇高水平学术论文</p>
+            </div>
+        </div>
+        
+        <!-- 经历条目 2 -->
+        <div class="experience-item">
+            <div class="experience-period">2016年9月 - 2020年6月</div>
+            <div class="experience-details">
+                <h3>天津大学</h3>
+                <p class="experience-position">计算机科学与技术专业 博士</p>
+                <p>师从王教授，研究方向为复杂网络分析与图表示学习</p>
+            </div>
+        </div>
+        
+        <!-- 经历条目 3 -->
+        <div class="experience-item">
+            <div class="experience-period">2013年9月 - 2016年6月</div>
+            <div class="experience-details">
+                <h3>天津大学</h3>
+                <p class="experience-position">计算机科学与技术专业 硕士</p>
+                <p>研究方向为复杂网络分析，获得优秀毕业生称号</p>
+            </div>
+        </div>
+        
+        <!-- 经历条目 4 -->
+        <div class="experience-item">
+            <div class="experience-period">2009年9月 - 2013年6月</div>
+            <div class="experience-details">
+                <h3>天津大学</h3>
+                <p class="experience-position">计算机科学与技术专业 学士</p>
+                <p>主修课程：数据结构、算法分析、计算机网络等，获得一等奖学金</p>
+            </div>
+        </div>
+    </div>
+</div>
+		
             <!-- Contact Info on the Sidebar -->
             <div class="col-md-4">
 		<img class="img-responsive" src="XuanGuo.jpg" width="180" height="240" alt=""><br>
