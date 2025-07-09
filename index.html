@@ -245,6 +245,71 @@ p {
 
 </style>
 
+
+<!-- 添加CSS样式 -->
+<style>
+    .timeline {
+        position: relative;
+        padding-left: 30px;
+        margin-left: 10px;
+        border-left: 3px solid #3d4f5d;
+    }
+    
+    .timeline-item {
+        margin-bottom: 40px;
+        position: relative;
+    }
+    
+    .timeline-date {
+        background: #3d4f5d;
+        color: white;
+        padding: 5px 12px;
+        border-radius: 20px;
+        display: inline-block;
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    
+    .timeline-content {
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        transition: all 0.3s ease;
+    }
+    
+    .timeline-content:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .timeline-content h3 {
+        margin-top: 0;
+        color: #2c3e50;
+        font-family: 'Oswald', sans-serif;
+    }
+    
+    .position {
+        font-weight: bold;
+        color: #3d4f5d;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+    
+    .timeline-item:before {
+        content: '';
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: #3d4f5d;
+        left: -38px;
+        top: 5px;
+        border: 3px solid white;
+        box-shadow: 0 0 0 2px #3d4f5d;
+    }
+</style>
   <link rel="stylesheet" href="pure-min.css">
   <link rel="stylesheet" href="grids-responsive-min.css">
 
@@ -291,7 +356,54 @@ p {
             <p style="margin-top:0.5%; text-align:justify;">
 			我现在是天津大学智能与计算学部博士后/助理研究员，主要研究领域为网络表示学习、复杂网络分析、图神经网络、图预训练模型等。欢迎有意向的学生联系我交流探讨。
 			</div> 
-			
+	<!-- 在个人介绍下方添加这段代码 -->
+<div id="experience" style="margin-top: 40px;">
+    <h2 style="font-family: 'Oswald', sans-serif; font-size: 32px; border-bottom: 2px solid #3d4f5d; padding-bottom: 10px; margin-bottom: 20px;">
+        学习/工作经历
+    </h2>
+    
+    <div class="timeline">
+        <!-- 经历条目 1 -->
+        <div class="timeline-item">
+            <div class="timeline-date">2020年9月 - 至今</div>
+            <div class="timeline-content">
+                <h3>天津大学</h3>
+                <p class="position">博士后/助理研究员</p>
+                <p>从事网络表示学习、图神经网络等方向的研究工作，发表多篇高水平学术论文</p>
+            </div>
+        </div>
+        
+        <!-- 经历条目 2 -->
+        <div class="timeline-item">
+            <div class="timeline-date">2016年9月 - 2020年6月</div>
+            <div class="timeline-content">
+                <h3>天津大学</h3>
+                <p class="position">计算机科学与技术专业 博士</p>
+                <p>师从王教授，研究方向为复杂网络分析与图表示学习</p>
+            </div>
+        </div>
+        
+        <!-- 经历条目 3 -->
+        <div class="timeline-item">
+            <div class="timeline-date">2013年9月 - 2016年6月</div>
+            <div class="timeline-content">
+                <h3>天津大学</h3>
+                <p class="position">计算机科学与技术专业 硕士</p>
+                <p>研究方向为复杂网络分析，获得优秀毕业生称号</p>
+            </div>
+        </div>
+        
+        <!-- 经历条目 4 -->
+        <div class="timeline-item">
+            <div class="timeline-date">2009年9月 - 2013年6月</div>
+            <div class="timeline-content">
+                <h3>天津大学</h3>
+                <p class="position">计算机科学与技术专业 学士</p>
+                <p>主修课程：数据结构、算法分析、计算机网络等，获得一等奖学金</p>
+            </div>
+        </div>
+    </div>
+</div>	
 
             <!-- Contact Info on the Sidebar -->
             <div class="col-md-4">
